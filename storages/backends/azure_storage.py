@@ -26,7 +26,9 @@ try:
         from azure.storage.blob import BlockBlobService as BlobService
     else:
         from azure.storage.blob.blobservice import BlobService
-
+except ImportError:
+    from azure.storage import BlobService
+    from azure import WindowsAzureMissingResourceError as AzureMissingResourceHttpError
 
 def clean_name(name):
     return os.path.normpath(name).replace("\\", "/")

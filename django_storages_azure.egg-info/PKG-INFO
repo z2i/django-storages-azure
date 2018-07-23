@@ -7,7 +7,7 @@ Author: Josh Schneier
 Author-email: josh.schneier@gmail.com
 License: BSD
 Description: ===============
-        django-storages-azure
+        django-storages
         ===============
         
         
@@ -25,7 +25,7 @@ Description: ===============
         
         .. code-block:: bash
         
-          pip install django-storages-azure
+          pip install django-storages
         
         If you'd prefer to install from source (maybe there is a bugfix in master that
         hasn't been released yet) then the magic incantation you are looking for is:
